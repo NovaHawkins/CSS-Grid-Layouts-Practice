@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Practice</title>
+
+<style id="styleMain">
+    body{
+        margin:0;
+        background-color:skyblue;
+        overflow-x:hidden;
+    }
+
+    .set{
+        width:100vw;
+        height:100vh;
+    }
+</style>
+
+
+<style id="styleOne">
+    #setOne{
+        display:grid;
+        grid-template-columns:auto auto auto auto;
+    }
+
+
+    .itemA{
+        background-color:darkblue;
+        color:white;
+        border:3px solid white;
+
+        padding:25px;
+    }
+</style>
+
+
+<style id="styleTwo">
+    #setTwo{
+        display:grid;
+        grid-template-columns: 10% 90%;
+    }
+
+    #a{
+        background-color:darkblue;
+        color:white;
+        padding:15px;
+    }
+    #b{
+        background-color:white;
+        padding:15px;
+    }
+</style>
+
+
+<style id="styleThree">
+.itemC{
+    display:block;
+    width:250px;
+    height:250px;
+    background-color:white;
+    text-align:center;
+    padding:1%;
+    margin-top:25%;
+    margin-left:45%;
+}
+</style>
+
+
+<style id="styleFour">
+    #setFour{
+        height:100vh;
+
+        display:grid;
+        grid-template-rows:10% 80% 10%;
+    }
+    .itemD1{
+        color:white;
+        background-color:darkblue;
+        padding:10px;
+    }
+    .itemD2{
+        background-color:white;
+        padding:10px;
+    }
+</style>
+
+
+<style id="styleFive">
+    #form{
+        width:800px;
+        background-color:white;
+        border-radius:5px;
+
+        padding:15px;
+    }
+    #register{background-color:lightgray;}
+    #infoCont{
+        display:grid;
+        grid-template-columns: auto auto;
+    }
+    #title{
+        text-align:center;
+        font-size: larger;
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="set" id="setOne">
+        <div class="itemA">1</div>
+        <div class="itemA">2</div>
+        <div class="itemA">3</div>
+        <div class="itemA">4</div>
+    </div>
+
+    <div class="set" id="setTwo">
+        <div class="itemB" id="a">
+            <p>sidebar content UwU</p>
+        </div>
+        <div class="itemB" id="b">
+            <h2>Header Content</h2>
+            <p>main content</p>
+            <p>main content</p>
+        </div> 
+    </div>
+
+    <div class="set" id="setThree">
+        <div class="itemC">
+            <h2>Modal Heading</h2>
+            <p>Modal Content</p>
+        </div>
+    </div>
+
+    <div class="set" id="setFour">
+        <div class="itemD1" id="head">Header</div>
+        <div class="itemD2" id="main">Main Body</div>
+        <div class="itemD1" id="foot">Footer</div>
+    </div>
+
+    <div id="setFive">
+        <form id="form">
+            <div id="title">Register Form</div>
+            <fieldset id="register">
+                
+
+                <div id="infoCont">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Email">
+
+                    <label for="nameF">First Name</label>
+                    <input type="text" placeholder="First Name">
+                    
+                    <label for="nameL">Last Name</label>
+                    <input type="text" placeholder="Last Name">
+
+                    <label for="deposit">Deposite ($)</label>
+                    <input type="text" placeholder="Deposite ($)">
+
+                    <label for="comment">Comment</label>
+                    <textarea rows="5" cols="25" placeholder="Add comment here"></textarea>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
